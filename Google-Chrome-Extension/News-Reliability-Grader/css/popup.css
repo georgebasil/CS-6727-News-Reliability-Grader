@@ -1,0 +1,106 @@
+<style>
+  .popup {
+    width: 400px;
+    height: 100%;   
+  }
+
+  .header {
+    text-align: center;
+  }
+  
+  .hide {
+    display: none;
+  }
+
+  .explanation {
+    padding-top: 10px;
+    clear: left;
+  }
+ 
+  .loading {
+    background-image: url("../images/loading.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 75px; 
+  }
+
+  .grade {
+    background-image: url("../images/-.png");
+    background-position: center;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-left: 20px;
+    float: left;
+    width: 20%;
+  }
+
+  .site-details {
+    float: left;
+    width: 70%;   
+  }
+
+  .label, .value {
+    float: left;
+  }
+
+  .domain, .author, .article-type, .list {
+    clear: left;
+  }
+
+  .no-bullets {
+    list-style-type: none;
+    margin-left: -15px;
+  }
+
+  .value h3 {
+    font-weight: normal;
+    padding-left: 5px;
+  }
+
+  .font {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  }
+
+  .green {
+    color: green;
+  }
+
+  .orange {
+    color: orange;
+  }
+
+  .red {
+    color: red;
+  }
+
+  li > h3 {
+    font-weight: normal;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 75px;
+    margin: 0px;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 25px;
+    margin: 0px;
+  }
+
+  h3, h4 {
+    margin: 5px 0px;
+  }
+
+  h6 {
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+    display: inline-block;
+    color: #00000030;  
+  }
+
+  p {
+    text-align: center;
+    font-size: 12px;
+  }
+</style>
