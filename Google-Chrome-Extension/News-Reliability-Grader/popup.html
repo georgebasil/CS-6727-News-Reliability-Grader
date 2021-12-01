@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="lib/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/popup.css" />
+    <style>
+      .popup {
+        width: 400px;
+        height: 100%;       
+      }
+    </style>
+  </head>
+  <body class="popup">
+    <div class="header">
+      <h6>blah blah blah</h6>
+      <img src="images/logo_48.png" />
+      <h6>blah blah blah</h6>
+    </div>
+    <h2 class="font">News Reliability Grader</h2>
+    <p class="font">Grades a news website's reliability based on technical characteristics</p>
+    <div class="not-news-site hide">
+      <p class="font">This website is not categorized as a news website.</p>
+    </div>
+    <div class="results hide">
+      <div class="grade">
+        <h1 class="font"></h1>
+      </div>
+      <div class="site-details">
+        <div class="domain">
+          <div class="label">
+            <h3 class="font">Site: </h3>
+          </div>
+          <div class="value">
+            <h3 class="font">-</h3>
+          </div>
+        </div>
+        <div class="author">
+          <div class="label">
+            <h3 class="font">Author: </h3>
+          </div>
+          <div class="value">
+            <h3 class="font">-</h3>
+          </div>
+        </div>
+        <div class="article-type">
+          <div class="label">
+            <h3 class="font">Article Type: </h3>
+          </div>
+          <div class="value">
+            <h3 class="font">-</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="explanation hide">
+      <div class="label">
+        <h3 class="font">Why the grade?</h3>
+      </div>
+      <div class="list">
+          <ul>
+            <li class="score-good green hide">
+              <h3 class="font">Technical characteristics more closely resemble those of reliable news sites.</h3>
+            </li>
+            <li class="score-bad red hide">
+              <h3 class="font">Technical characteristics more closely resemble those of misinformation sites.</h3>
+            </li>
+            <li class="author-included green hide">
+              <h3 class="font">Author name included - a reputable feature. <sup>[1]</sup></h3>
+            </li>
+            <li class="author-excluded red hide">
+              <h3 class="font">Unable to identify author - a reputable feature. <sup>[1]</sup></h3>
+            </li>
+            <li class="article-type-included green hide">
+              <h3 class="font">Article type mentioned - a reputable feature. <sup>[1]</sup></h3>
+            </li>
+            <li class="article-type-excluded red hide">
+              <h3 class="font">Unable to identify article type - a reputable feature. <sup>[1]</sup></h3>
+            </li>
+            <li class="opinion-piece orange hide">
+              <h3 class="font">Article is opinion piece. Read carefully.</h3>
+            </li>
+            <li class="trusted-registrar green hide">
+              <h3 class="font">Using a trusted site registrar. <sup>[2]</sup></h3>
+            </li>
+            <li class="trusted-domain-age green hide">
+              <h3 class="font">Site has been around for 15+ years. <sup>[2]</sup></h3>
+            </li>
+            <li class="trusted-tld green hide">
+              <h3 class="font">Site uses a trusted TLD (e.g. .com, .org, etc.). <sup>[2]</sup></h3>
+            </li>
+          </ul>
+      </div>
+      <div class="label">
+        <h3 class="font">Sources:</h3>
+      </div>
+      <div class="list">
+          <ul class="no-bullets">
+            <li class="source-one hide">
+              <h4 class="font">
+                [1] - 
+                <a href="https://libguides.ucmerced.edu/news/reputable" target="_blank">
+                  Web Evaluation & News Sources: Reputable News Sources
+                </a>
+              </h4>
+            </li>
+            <li class="source-two hide">
+              <h4 class="font">
+                [2] - 
+                <a href="https://www.usenix.org/system/files/foci20_hounsel_update.pdf" target="_blank">
+                  Identifying Disinformation Websites Using Infrastructure Features
+                </a>
+              </h4>
+            </li>
+          </ul>
+      </div>
+    </div>
+    <div class="loading">
+    </div>
+    <script src="js/popup.js"></script>
+  </body>
+</html>
