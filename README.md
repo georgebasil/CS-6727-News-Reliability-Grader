@@ -11,6 +11,12 @@ The internet has allowed misinformation to spread with little push-back enabling
   <img src="/images/High-Level-Design-Diagram.png" alt="High Level Design Diagram">
 </p>
 
+900+ legitimate and misinformation news websites exist along with their score in Training-Dataset/sites.csv. Training-Dataset/build_training_dataset.py constructs the training dataset file (Training-Dataset/training_data.csv) against Training-Dataset/sites.csv. A copy of Training-Dataset/training_data.csv exists in Web-Server/cgi-bin. 
+
+Web-Server/cgi-bin/train_model.py creates a saved trained model against the Web-Server/cgi-bin/training_data.csv file. API requests to Web-Server/classify.php instantiates Web-Server/cgi-bin/classify.py to produce classified predictions against the saved trained model.
+
+The Google Chrome extension installed in a reader's browser instantiates the API call for a classified prediction and produces a fly-out containing the reliability grade. 
+
 ### Installation
 
 To use this project for self use, follow the installation steps below. 
