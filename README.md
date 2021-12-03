@@ -1,12 +1,18 @@
 # News Reliability Grader
 
-### Introduction
 
-This project sets out to grade the reliability of news websites using a trained machine learning (ML) model on technical characteristics of news websites. The reliability grade is then made available through a Google Chrome extension fly-out
+### Abstract
 
-To use this project for self use, follow the installation steps below. 
+The internet has allowed misinformation to spread with little push-back enabling malicious actors to target subsets of people for cyber-attacks. Current defenses lack unbiased and immediate warnings to readers prior to reading and/or sharing news stories. In this report, a new solution is introduced which aims to deliver an unbiased and real-time news website reliability grade. The solution is achieved through a trained machine learning model on unbiased technical characteristics of recognized legitimate and misinformation sites with the machine learning model’s prediction made available immediately to readers through a Google Chrome extension in the form of a letter grade. This report will share the solution details and demonstrate its high success rate as an unbiased real-time news website reliability grader and as a necessary defense from cyber-attacks through misinformation.
+
+### Design
+
+<center><img src="/images/High-Level-Design-Diagram.png"></center>
+<center>High Level Design Diagram</center>
 
 ### Installation
+
+To use this project for self use, follow the installation steps below. 
 
 ###### System Requirements
  - Python version 3.7 or greater
