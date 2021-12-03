@@ -7,8 +7,9 @@ The internet has allowed misinformation to spread with little push-back enabling
 
 ### Design
 
-<center><img src="/images/High-Level-Design-Diagram.png"></center>
-<center>High Level Design Diagram</center>
+<p align="center">
+  <img src="/images/High-Level-Design-Diagram.png">
+</p>
 
 ### Installation
 
