@@ -55,8 +55,10 @@ To use this project for self use, follow the installation steps below.
  1. Use the Training-Dataset/requirements.txt file to install the necessary Python packages
  2. Update lines 231, 276, and 277 of Training-Dataset/build_training_dataset.py replacing <PATH-TO-WORKING-DIRECTORY> with your path
  2. Update line 208 of Training-Dataset/build_training_dataset.py replacing <YOUR-IPINFO-API-KEY> with your IPInfo API key
- 3. Execute Training-Dataset/build_training_dataset.py to generate a new training dataset CSV file using the existing sites.csv
- 4. (optional) Replace sites.csv with a new file for creating a new training dataset. The format requirements are: DOMAIN,TRUE-SCORE (1/0)
+ 3. Execute Training-Dataset/build_training_dataset.py to generate a new training dataset CSV file using the existing Training-Dataset/sites.csv
+ 4. (optional) Replace Training-Dataset/sites.csv with a new file for creating a new training dataset. The format requirements are: DOMAIN,TRUE-SCORE (1/0)
+ 5. Copy the resulting Training-Dataset/training_data.csv file into Web-Server/cgi-bin/
+ 6. Continue with step 7 for "Steps to use the machine learning model with pre-prepared training data"
 
 ### Disclaimer
 
